@@ -1,0 +1,268 @@
+/* Кастомные стили админки Django */
+
+/* Основные цвета */
+:root {
+    --admin-red-primary: #E31E24;
+    --admin-red-dark: #C41E3A;
+    --admin-red-light: #FF3B47;
+    --admin-red-hover: #B01A2E;
+    --admin-red-active: #9A1628;
+    --admin-red-bg: #FFF5F5;
+    --admin-red-border: #FFB3B8;
+}
+
+#header {
+    background: var(--admin-red-primary) !important;
+    color: #fff !important;
+}
+
+#header a:link, #header a:visited {
+    color: #fff !important;
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+    background: var(--admin-red-primary) !important;
+    border-color: var(--admin-red-dark) !important;
+    color: #fff !important;
+}
+
+.button:hover, input[type=submit]:hover, input[type=button]:hover, .submit-row input:hover, a.button:hover {
+    background: var(--admin-red-hover) !important;
+    border-color: var(--admin-red-active) !important;
+}
+
+.button:active, input[type=submit]:active, input[type=button]:active, .submit-row input:active, a.button:active {
+    background: var(--admin-red-active) !important;
+}
+
+.button.default, input[type=submit].default, .submit-row input.default {
+    background: var(--admin-red-primary) !important;
+    border-color: var(--admin-red-dark) !important;
+}
+
+.button.default:hover, input[type=submit].default:hover, .submit-row input.default:hover {
+    background: var(--admin-red-hover) !important;
+}
+
+a:link, a:visited {
+    color: var(--admin-red-primary) !important;
+}
+
+a:hover {
+    color: var(--admin-red-hover) !important;
+}
+
+#changelist-filter li.selected a {
+    color: var(--admin-red-primary) !important;
+    border-left-color: var(--admin-red-primary) !important;
+}
+
+.selected {
+    background-color: var(--admin-red-bg) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--admin-red-primary) !important;
+    box-shadow: 0 0 0 1px var(--admin-red-primary) !important;
+}
+
+input[type=checkbox]:checked, input[type=radio]:checked {
+    background-color: var(--admin-red-primary) !important;
+    border-color: var(--admin-red-primary) !important;
+}
+
+#changelist table thead th {
+    background: var(--admin-red-bg) !important;
+    border-bottom-color: var(--admin-red-border) !important;
+}
+
+#changelist table thead th.sorted {
+    background: var(--admin-red-bg) !important;
+}
+
+#changelist table tbody tr.selected {
+    background-color: var(--admin-red-bg) !important;
+}
+
+.paginator a:link, .paginator a:visited {
+    background: var(--admin-red-primary) !important;
+    color: #fff !important;
+}
+
+.paginator a:hover {
+    background: var(--admin-red-hover) !important;
+}
+
+.paginator a.showall {
+    color: var(--admin-red-primary) !important;
+}
+
+.success {
+    background-color: var(--admin-red-bg) !important;
+    border-left-color: var(--admin-red-primary) !important;
+}
+
+.tab {
+    background: var(--admin-red-bg) !important;
+    border-color: var(--admin-red-border) !important;
+}
+
+.tab.selected {
+    background: var(--admin-red-primary) !important;
+    color: #fff !important;
+}
+
+.tab.selected a {
+    color: #fff !important;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: var(--admin-red-primary) !important;
+    color: #fff !important;
+}
+
+.object-tools a {
+    background-color: var(--admin-red-primary) !important;
+    color: #fff !important;
+}
+
+.object-tools a:hover {
+    background-color: var(--admin-red-hover) !important;
+}
+
+.module ul.actionlist li a {
+    color: var(--admin-red-primary) !important;
+}
+
+/* Селекты и выпадающие списки */
+select:focus {
+    border-color: var(--admin-red-primary) !important;
+}
+
+.calendarbox, .calendarnav-previous, .calendarnav-next {
+    background: var(--admin-red-primary) !important;
+}
+
+.calendarbox .calendarnav-previous a, .calendarbox .calendarnav-next a {
+    color: #fff !important;
+}
+
+.calendarbox .today a {
+    background: var(--admin-red-primary) !important;
+    color: #fff !important;
+}
+
+.calendarbox .selected a {
+    background: var(--admin-red-dark) !important;
+    color: #fff !important;
+}
+
+.clockbox {
+    background: var(--admin-red-primary) !important;
+}
+
+.clockbox .timelist a {
+    color: var(--admin-red-primary) !important;
+}
+
+.clockbox .timelist a:hover {
+    background: var(--admin-red-bg) !important;
+}
+
+.related-widget-wrapper-link {
+    color: var(--admin-red-primary) !important;
+}
+
+.inline-group .tabular tr.has_original td {
+    background-color: var(--admin-red-bg) !important;
+}
+
+.delete input {
+    border-color: var(--admin-red-primary) !important;
+}
+
+.breadcrumbs {
+    background: var(--admin-red-bg) !important;
+    border-bottom-color: var(--admin-red-border) !important;
+}
+
+.breadcrumbs a {
+    color: var(--admin-red-primary) !important;
+}
+
+#user-tools a {
+    color: #fff !important;
+}
+
+#user-tools a:hover {
+    color: var(--admin-red-light) !important;
+}
+
+.messagelist li {
+    background-color: var(--admin-red-bg) !important;
+    border-left-color: var(--admin-red-primary) !important;
+}
+
+.errornote {
+    background: var(--admin-red-bg) !important;
+    border-color: var(--admin-red-primary) !important;
+    color: var(--admin-red-dark) !important;
+}
+
+.help {
+    color: var(--admin-red-dark) !important;
+}
+
+.readonly {
+    background-color: var(--admin-red-bg) !important;
+}
+
+.add-another {
+    color: var(--admin-red-primary) !important;
+}
+
+.viewlink, .addlink, .changelink, .deletelink {
+    color: var(--admin-red-primary) !important;
+}
+
+#changelist-filter h2 {
+    background: var(--admin-red-primary) !important;
+    color: #fff !important;
+}
+
+#changelist-filter h3 {
+    background: var(--admin-red-bg) !important;
+    border-bottom-color: var(--admin-red-border) !important;
+}
+
+#changelist-search input[type="submit"] {
+    background: var(--admin-red-primary) !important;
+    border-color: var(--admin-red-dark) !important;
+}
+
+#changelist-search input[type="submit"]:hover {
+    background: var(--admin-red-hover) !important;
+}
+
+.action-select {
+    border-color: var(--admin-red-primary) !important;
+}
+
+#changelist .actions {
+    background: var(--admin-red-bg) !important;
+    border-color: var(--admin-red-border) !important;
+}
+
+#changelist .actions select {
+    border-color: var(--admin-red-primary) !important;
+}
+
+#changelist .actions button {
+    background: var(--admin-red-primary) !important;
+    color: #fff !important;
+}
+
+#changelist .actions button:hover {
+    background: var(--admin-red-hover) !important;
+}
+
